@@ -79,6 +79,7 @@ class App extends Component {
             inputValue={inputValue}
             inputChange={(text) => this.inputChange(text)} />
           <TodoList
+            type={type}
             toggleComplete={this.toggleComplete}
             deleteTodo={this.deleteTodo}
             todos={todos} />
