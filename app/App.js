@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
+import uuid from 'uuid/v1';
 import Header from './Header';
 import Input from './Input';
 import Button from './Button';
@@ -33,7 +34,7 @@ class App extends Component {
     }
     let todo = {
       title: this.state.inputValue,
-      todoIndex: todoIndex,
+      todoIndex: uuid(),
       complete: false,
     }
     todoIndex++;
